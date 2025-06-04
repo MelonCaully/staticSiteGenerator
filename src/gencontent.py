@@ -25,6 +25,9 @@ def generate_page(from_path, template_path, dest_path):
     to_file = open(dest_path, "w")
     to_file.write(template)
 
+def generate_pages_recursive(dir_path_content, template_path, dest_dir_path):
+    content_list = os.listdir(dir_path_content)
+    print(content_list)
 
 def extract_title(md):
     lines = md.split("\n")
@@ -32,3 +35,5 @@ def extract_title(md):
         if line.startswith("# "):
             return line[2:]
     raise ValueError("no title found")
+
+generate_pages_recursive("./content", "./template.html", "./public")
