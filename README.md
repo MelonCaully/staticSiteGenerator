@@ -1,4 +1,5 @@
 # Static Site Generator
+[![Docs](https://img.shields.io/badge/docs-Python-blue?logo=python&logoColor=white)](https://MelonCaully.github.io/staticSiteGenerator/)
 
 A fast, minimal static site generator powered by Python. This tool parses Markdown files and transforms them into clean, deployable HTML files inside a docs directory — perfect for GitHub Pages or any static hosting. Built for simplicity and extensibility, it's an easy way to turn plain text into polished websites with zero server-side fuss.
 
